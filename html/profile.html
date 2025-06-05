@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="home-icon" id="homeIcon">
+                <i class="fas fa-home"></i>
+            </div>
+            <h1 class="app-title">User Profile</h1>
+            <div class="profile-icon" id="profileIcon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <div class="profile-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <h2 class="username" id="username">Usser1</h2>
+            <p class="email" id="userEmail">proyect_123@gmail.com</p>
+        </div>
+
+        <div class="profile-actions">
+            <button class="action-button secondary-button" id="changePasswordBtn">Change Password</button>
+            <button class="action-button primary-button" id="logoutBtn">Log Out</button>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación de Cierre de Sesión -->
+    <div id="logoutConfirmationModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Are you sure?</h2>
+            <p>Do you really want to log out?</p>
+            <div class="modal-buttons">
+                <button id="cancelLogoutBtn" class="action-button secondary-button">Cancel</button>
+                <button id="confirmLogoutBtn" class="action-button primary-button">Yes, Log Out</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlaza el archivo JavaScript para el perfil -->
+    <script src="/js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy History</title>
+    <!-- Enlaza la hoja de estilos CSS para el historial -->
+    <link rel="stylesheet" href="/css/history.css">
+    <!-- Enlaza Font Awesome para los iconos de casa y usuario -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlaza la biblioteca Chart.js para dibujar gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="home-icon" id="homeIcon">
+                <i class="fas fa-home"></i>
+            </div>
+            <h1 class="app-title">Energy History</h1>
+            <div class="profile-icon" id="profileIcon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <canvas id="energyConsumptionChart"></canvas>
+        </div>
+
+        <div class="history-table-section">
+            <div class="table-controls">
+                <div class="sort-controls">
+                    <label for="sortOrder">Sort by Date:</label>
+                    <select id="sortOrder">
+                        <option value="desc">Most Recent First</option>
+                        <option value="asc">Oldest First</option>
+                    </select>
+                </div>
+
+                <div class="date-filter-controls">
+                    <label for="startDate">From:</label>
+                    <input type="date" id="startDate">
+                    <label for="endDate">To:</label>
+                    <input type="date" id="endDate">
+                    <button id="filterDateBtn">Filter</button>
+                    <button id="clearFilterBtn">Clear Filter</button>
+                </div>
+            </div>
+
+            <table class="energy-history-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Energy Consumed</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTableBody">
+                </tbody>
+            </table>
+            <button id="loadMoreBtn" class="action-button load-more-button">Load More</button>
+        </div>
+    </div>
+
+    <script src="/js/history.js"></script>
+</body>
+</html>

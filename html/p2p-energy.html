@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Energy System</title>
+    <!-- Enlaza la hoja de estilos CSS para el sistema P2P -->
+    <link rel="stylesheet" href="/css/p2p-energy.css">
+    <!-- Enlaza Font Awesome para los iconos de casa y usuario -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="home-icon" id="homeIcon">
+                <i class="fas fa-home"></i>
+            </div>
+            <h1 class="app-title">P2P Energy Network</h1>
+            <div class="profile-icon" id="profileIcon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+
+        <div class="intro-text">
+            <p>This section demonstrates a conceptual Peer-to-Peer (P2P) energy exchange system among neighbors, leveraging a local blockchain for transparent transaction recording.</p>
+        </div>
+
+        <div class="energy-nodes">
+            <div class="node">
+                <h3>Neighbor A (Producer)</h3>
+                <p>Excess Energy: <span id="neighborAExcess">10 kWh</span></p>
+            </div>
+            <div class="node">
+                <h3>Neighbor B (Consumer)</h3>
+                <p>Energy Needed: <span id="neighborBNeeded">5 kWh</span></p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="action-button" id="simulateTradeBtn">Simulate Energy Trade</button>
+            <button class="action-button secondary-button" id="resetSimulationBtn">Reset Simulation</button>
+        </div>
+
+        <div class="blockchain-log-section">
+            <h2>Blockchain Transaction Log</h2>
+            <div class="log-container">
+                <ul id="transactionLog">
+                    <!-- Transactions will be added here by JavaScript -->
+                    <li><span class="timestamp">[00:00:00]</span> System initialized.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlaza el archivo JavaScript para el sistema P2P -->
+    <script src="/js/p2p-energy.js"></script>
+</body>
+</html>

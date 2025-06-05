@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Monitor</title>
+    <!-- Enlaza la hoja de estilos CSS para el dashboard -->
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <!-- Enlaza Font Awesome para los iconos (como el de usuario) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="app-title">Current Energy</h1>
+            <div class="profile-icon" id="profileIcon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+
+        <div class="energy-status">
+            <h2 class="battery-title">Total Battery: <span id="totalBattery">67%</span></h2>
+            <div class="battery-bar-container">
+                <div class="battery-bar">
+                    <div class="battery-fill" style="width: 67%;">
+                        <span class="battery-time">15h 10min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="energy-sources">
+            <p class="source-solar">E.Solar: <span id="solarEnergy">39%</span></p>
+            <p class="source-biomass">E.Biomasa: <span id="biomassEnergy">10%</span></p>
+            <p class="source-manual">E.Manual: <span id="manualEnergy">10%</span></p>
+        </div>
+
+        <div class="actions">
+            <!-- Botón para ver el historial de consumo, con ID para JavaScript -->
+            <button class="action-button" id="viewHistoryBtn">View Consumption History</button>
+            <button class="action-button" id="addEnergyBtn">Add Energy</button>
+            <!-- Nuevo botón para el sistema P2P -->
+            <button class="action-button p2p-button" id="viewP2PSystemBtn">View P2P System</button>
+        </div>
+    </div>
+
+    <!-- Enlaza el archivo JavaScript para el dashboard -->
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
