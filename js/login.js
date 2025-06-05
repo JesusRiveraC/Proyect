@@ -10,7 +10,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
   if (validUser) {
     // Redirect to dashboard
-    window.location.href = "/html/dashboard.html";
+    window.location.href = "/Proyect/html/dashboard.html";
   } else {
     errorMessage.textContent = "Invalid username or password.";
   }
