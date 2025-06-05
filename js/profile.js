@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Listener para el botón "Yes, Log Out" del modal
     confirmLogoutBtn.addEventListener('click', () => {
         hideModal(); // Oculta el modal antes de redirigir
-        window.location.href = '/html/index.html'; // Redirige a la página de inicio de sesión
+        window.location.href = '/index.html'; // Redirige a la página de inicio de sesión
     });
 
     // --- Funciones para cargar datos del usuario (opcional) ---

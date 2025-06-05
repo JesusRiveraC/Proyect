@@ -14,5 +14,5 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
 
   // Simulate account creation
   alert(`Account created successfully for ${username}!`);
-  window.location.href = "/html/index.html"; // Redirect to login
+  window.location.href = "/index.html"; // Redirect to login
 });
